@@ -1,12 +1,34 @@
 <template>
-    <a href="https://flowbite.com/" class="flex items-center">
-        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" :alt="name" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"> {{ name }} </span>
+    <a
+        v-if="src"
+        :href="link"
+        class="flex items-center space-x-3 rtl:space-x-reverse"
+    >
+
+        <img
+            :src="src"
+            class="h-8 mr-3"
+            :alt="name"
+        />
     </a>
+    <h1
+        class="text-xl font-bold dark:text-white"
+        v-else
+    >
+        {{ name }}
+    </h1>
 </template>
 
 <script setup>
 const props = defineProps({
+    src: {
+        type: String,
+        default: null,
+    },
+    link: {
+        type: String,
+        default: null,
+    },
     name: {
         type: String,
         required: true,
