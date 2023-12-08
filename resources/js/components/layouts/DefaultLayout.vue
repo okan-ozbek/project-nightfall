@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col h-screen relative">
+    <div class="bg-gray-900 flex flex-col h-screen justify-between relative">
         <DefaultHead />
         <header>
             <DefaultNavigation />
