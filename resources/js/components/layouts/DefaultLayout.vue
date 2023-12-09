@@ -1,13 +1,11 @@
 <template>
-    <div class="flex flex-col h-screen justify-between relative">
+    <div class="flex flex-col h-screen relative">
         <DefaultHead />
         <header>
             <DefaultNavigation />
         </header>
-        <main class="py-8 mx-[20%]">
-            <div class="px-4">
-                <slot />
-            </div>
+        <main>
+            <slot />
         </main>
         <footer>
             <DefaultFooter />
