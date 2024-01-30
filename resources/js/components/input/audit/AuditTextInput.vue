@@ -55,8 +55,6 @@ onBeforeMount(() => {
 
 function toggleComment()
 {
-    console.log(value.value);
-
     return (comment.value !== null || initialValue.value !== value.value);
 }
 
