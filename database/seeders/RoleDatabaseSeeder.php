@@ -12,6 +12,5 @@ class RoleDatabaseSeeder extends Seeder
     {
         Role::create(['name' => UserRoleEnum::ADMIN->value]);
         Role::create(['name' => UserRoleEnum::GUEST->value]);
-        Role::create(['name' => UserRoleEnum::SERVICE_DESK->value]);
     }
 }

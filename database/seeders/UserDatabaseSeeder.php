@@ -20,21 +20,9 @@ class UserDatabaseSeeder extends Seeder
         $users = [
             new UserDTO([
                 'name' => 'Okan can Ozbek',
-                'email' => 'okancan+guest@live.nl',
-                'password' => Hash::make('password'),
-                'role' => UserRoleEnum::GUEST->value
-            ]),
-            new UserDTO([
-                'name' => 'Okan can Ozbek',
-                'email' => 'okancan+admin@live.nl',
+                'email' => 'o.ozbek@nightfall.com',
                 'password' => Hash::make('password'),
                 'role' => UserRoleEnum::ADMIN->value
-            ]),
-            new UserDTO([
-                'name' => 'Okan can Ozbek',
-                'email' => 'okancan+service-desk@live.nl',
-                'password' => Hash::make('password'),
-                'role' => UserRoleEnum::SERVICE_DESK->value
             ]),
         ];
 

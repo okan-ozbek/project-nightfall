@@ -3,7 +3,7 @@
         <div class="nav-container">
             <DefaultLogo name="Flowbite"/>
             <div class="cta">
-                <NavCallToAction text="Contact us" />
+                <NavCallToAction text="Log-in" />
                 <NavHamburger text="Open menu" />
             </div>
             <div class="link-container" id="navbar-sticky">
