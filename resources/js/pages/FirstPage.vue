@@ -1,14 +1,11 @@
 <template>
-    <AuditTextInput
-        name="username"
-        label="Username"
-        :required="true"
-    />
+
 </template>
 
 <script setup>
 import {onBeforeMount} from "vue";
-import AuditTextInput from "../components/input/audit/AuditTextInput.vue";
+import route from "ziggy-js/src/js/index.js";
+
 
 const props = defineProps({
     message: {
